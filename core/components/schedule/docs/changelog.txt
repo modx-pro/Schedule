@@ -1,0 +1,5 @@
+Changelog for Schedule.
+
+Schedule 1.0.0
+==============
+- Initial release.

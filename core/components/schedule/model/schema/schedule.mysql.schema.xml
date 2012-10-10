@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="schedule" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" version="1.1">
+	<object class="ShRecord" table="schedule_shRecord" extends="xPDOSimpleObject">
+		<field key="resource" dbtype="int" precision="10" phptype="integer" null="false" default="0" />
+		<field key="day" dbtype="tinyint" precision="1" phptype="integer" null="false" default="0" />
+		<field key="time" dbtype="time" phptype="string" null="true" />
+		<field key="date_start" dbtype="datetime" phptype="datetime" null="true" />
+		<field key="date_end" dbtype="datetime" phptype="datetime" null="true" />
+		<field key="data" dbtype="text" phptype="string" null="true" />
+	</object>
+</model>
