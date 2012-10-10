@@ -18,17 +18,17 @@ $chunks[0]->fromArray(array(
 $chunks[1]= $modx->newObject('modChunk');
 $chunks[1]->fromArray(array(
 	'id' => 0,
-	'name' => 'tpl.Schedule.col.data',
-	'description' => 'Chunk for templating one cell',
-	'snippet' => file_get_contents($sources['source_core'].'/elements/chunks/schedule_col_data.chunk.tpl'),
+	'name' => 'tpl.Schedule.col.data.mgr',
+	'description' => 'Chunk for templating additional data',
+	'snippet' => file_get_contents($sources['source_core'].'/elements/chunks/schedule_col_data_mgr.chunk.tpl'),
 ),'',true,true);
 
 $chunks[2]= $modx->newObject('modChunk');
 $chunks[2]->fromArray(array(
 	'id' => 0,
-	'name' => 'tpl.Schedule.data.row',
-	'description' => 'Chunk for templating additional data in record',
-	'snippet' => file_get_contents($sources['source_core'].'/elements/chunks/schedule_data_row.chunk.tpl'),
+	'name' => 'tpl.Schedule.col.data.web',
+	'description' => 'Chunk for templating additional data',
+	'snippet' => file_get_contents($sources['source_core'].'/elements/chunks/schedule_col_data_web.chunk.tpl'),
 ),'',true,true);
 
 $chunks[3]= $modx->newObject('modChunk');

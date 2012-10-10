@@ -1,8 +1,9 @@
 <?php
+$scriptProperties['render_data_tpl'] = $scriptProperties['tplCol.data'];
+
 $modx->Schedule = $modx->getService('schedule','Schedule',$modx->getOption('schedule.core_path',null,$modx->getOption('core_path').'components/schedule/').'model/schedule/',$scriptProperties);
 if (!($modx->Schedule instanceof Schedule)) return '';
 
-$scriptProperties['render_data_tpl'] = $scriptProperties['tplCol.data'];
 $response = $modx->runProcessor('mgr/schedule/getlist'
 	,$scriptProperties
 	,array('processors_path' => $modx->Schedule->config['processorsPath'])

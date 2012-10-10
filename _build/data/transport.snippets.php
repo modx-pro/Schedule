@@ -18,4 +18,12 @@ $properties = include $sources['build'].'properties/properties.schedule.php';
 $snippets[0]->setProperties($properties);
 unset($properties);
 
+$snippets[1]= $modx->newObject('modSnippet');
+$snippets[1]->fromArray(array(
+	'id' => 0,
+	'name' => 'getResourceTitle',
+	'description' => 'Output filter that gets pagetitle of specified resource',
+	'snippet' => getSnippetContent($sources['source_core'].'/elements/snippets/snippet.gettitle.php'),
+),'',true,true);
+
 return $snippets;

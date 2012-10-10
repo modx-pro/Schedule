@@ -32,7 +32,7 @@ $properties = array(
 	),
 	array(
 		'name' => 'tplCol.data',
-		'value' => 'tpl.Schedule.col.data',
+		'value' => 'tpl.Schedule.col.data.web',
 		'type' => 'textfield',
 		'desc' => '',
 	),

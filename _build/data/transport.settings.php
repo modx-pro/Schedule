@@ -64,7 +64,7 @@ $settings[5]->fromArray(array(
 $settings[6]= $modx->newObject('modSystemSetting');
 $settings[6]->fromArray(array(
 	'key' => 'schedule.render_data_tpl'
-	,'value' => 'tpl.Schedule.data.row'
+	,'value' => 'tpl.Schedule.col.data.mgr'
 	,'xtype' => 'textfield'
 	,'namespace' => 'schedule'
 	,'area' => ''
